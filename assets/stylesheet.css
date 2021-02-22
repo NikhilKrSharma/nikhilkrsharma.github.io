@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    background-image: url("assets/images/nav-backgroud.png");
+    height: 3em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}  
+
+.navbar-content {
+    padding-left: 4em;
+    font-weight: 900;
+}
+
+.navbar-content > a {
+    text-decoration: none;
+    -webkit-transition: 1s all;
+    color: rgba(255, 255, 255, 255);
+    /* color: cornflowerblue; */
+    font-size: 1.2em;
+    
+}
+
+a:hover {
+    font-size: 2em;
+}
+
+
+.landing-area {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding-bottom: 12em;
+}
+
+.landing-area-content {
+    display: block;
+}
+
+.landing-area-profile-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+}
+
+.landing-area-profile-picture:hover {
+    opacity: 1;
+    -webkit-transition: 2s all;
+}
+
+.landing-area-profile-picture > img {
+    border-radius: 50%;
+    width: 20em;
+    padding-top: 2em;
+}
+
+.landing-area-content > h1 {
+    padding: 2em;
+    padding-left: 0;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.my-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.my-name:hover {
+    font-size: 2em;
+    -webkit-transition: 2s all;
+}
+
+.landing-area-content > p {
+    padding: 2em;
+    padding-left: 0;
+    padding-top: 0;
+    font-size: 2em;
+}
+
+.chatbot-container {
+    position: fixed;
+    right: 0.3em;
+    bottom: 0.3em;
+    width: 6em;
+    height: 2em;
+    border-radius: 30px;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: chatbot-animation;
+    animation-duration: 3s;
+    animation-iteration-count: 1000;
+}
+
+@keyframes chatbot-animation {
+    0% {background-color: brown; color: white;}
+    25% {background-color: rgb(80, 73, 73); color: white;}
+    50% {background-color: rgb(43, 39, 39); color: white;}
+    75% {background-color: rgb(16, 16, 16); color: white;}
+    100% {background-color: black; color: white;}
+  }
