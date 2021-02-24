@@ -2,6 +2,7 @@ $primary-color: grey;
 
 body {
     background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -15,11 +16,15 @@ body {
     justify-content: space-around;
     background-color: black;
 
+    ul {
+        display: flex;   
+    }
+
     a {
         text-decoration: none;
         color: rgb(255, 255, 255);
         font-weight: bold;
-        font-size: 15px;
+        font-size: 12px;
         padding: 5px;
     }
 }
@@ -30,7 +35,7 @@ body {
         border-radius: 50%;
         width: 40%;
         margin: auto;
-        margin-top: 30px;
+        margin-top: 3.5em;
         padding: 10px;
     }
 
@@ -40,40 +45,96 @@ body {
         margin: auto;
         align-items: center;
         justify-content: space-evenly;
+
+        .name {
+            font-weight: 800;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            span {
+                font-size: 20px;
+            }
+        }
     }
 }
 
 .chatbot-container {
     position: fixed;
+    display: flex;
     right: 10px;
     bottom: 10px;
-    width: 20%;
+    width: 18%;
+    height: 25px;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
-    color: red;
-    background-color: black;
+    color: rgb(255, 230, 0);
+    font-weight: bold;
+    background-color: rgb(154, 3, 214);
 }
 
 @media (min-width: 500px) {
-    .landing-area {
-        display: flex;
-        padding: 10px;
-        
-        .content {
-            display: flex;
-            // margin-top: 80px;
-            flex-direction: column;
-            align-items: left;
-            justify-content: space-evenly;
 
-            span:hover {
-                color: blueviolet;
+    .navbar {    
+        background-color: black;
+        text-align: center;
+
+        ul {
+            display: flex;
+            
+            li {
+                a:hover{
+                    color: chartreuse;
+                }
             }
         }
 
-        img {
-            width:30%
+        a {
+            font-weight: bold;
+            font-size: 20px;
+            padding: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            
         }
+    }
+
+    .landing-area {
+        display: flex;
+        padding: 10px;
+        height: 100vh;
+        
+        img {
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 30%
+        }
+
+        .content {
+            flex-direction: column;
+            align-items: stretch;
+
+            .name {
+                font-size: 30px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                justify-content: center;
+
+                span {
+                    font-size: 40px;
+                }
+
+                span:hover {
+                    color: rgb(62, 99, 26);
+                }
+            }
+        }
+
+    }
+
+    .chatbot-container {
+        width: 10%;
     }
 }

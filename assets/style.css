@@ -1,5 +1,7 @@
 body {
   background-color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .navbar {
@@ -18,11 +20,17 @@ body {
   background-color: black;
 }
 
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .navbar a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 12px;
   padding: 5px;
 }
 
@@ -33,7 +41,7 @@ body {
   border-radius: 50%;
   width: 40%;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 3.5em;
   padding: 10px;
 }
 
@@ -54,11 +62,26 @@ body {
           justify-content: space-evenly;
 }
 
+.landing-area .content .name {
+  font-weight: 800;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.landing-area .content .name span {
+  font-size: 20px;
+}
+
 .chatbot-container {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   right: 10px;
   bottom: 10px;
-  width: 20%;
+  width: 18%;
+  height: 25px;
   border-radius: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -66,37 +89,68 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: red;
-  background-color: black;
+  color: #ffe600;
+  font-weight: bold;
+  background-color: #9a03d6;
 }
 
 @media (min-width: 500px) {
+  .navbar {
+    background-color: black;
+    text-align: center;
+  }
+  .navbar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar ul li a:hover {
+    color: chartreuse;
+  }
+  .navbar a {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .landing-area {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 10px;
+    height: 100vh;
+  }
+  .landing-area img {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 30%;
   }
   .landing-area .content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: left;
-        -ms-flex-align: left;
-            align-items: left;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
-  .landing-area .content span:hover {
-    color: blueviolet;
+  .landing-area .content .name {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .landing-area img {
-    width: 30%;
+  .landing-area .content .name span {
+    font-size: 40px;
+  }
+  .landing-area .content .name span:hover {
+    color: #3e631a;
+  }
+  .chatbot-container {
+    width: 10%;
   }
 }
 /*# sourceMappingURL=style.css.map */
