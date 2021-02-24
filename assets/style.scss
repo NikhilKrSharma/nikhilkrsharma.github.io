@@ -28,9 +28,9 @@ body {
     img {
         display: flex;
         border-radius: 50%;
-        width: 60%;
+        width: 40%;
         margin: auto;
-        margin-top: 2.2em;
+        margin-top: 30px;
         padding: 10px;
     }
 
@@ -53,4 +53,27 @@ body {
     justify-content: center;
     color: red;
     background-color: black;
+}
+
+@media (min-width: 500px) {
+    .landing-area {
+        display: flex;
+        padding: 10px;
+        
+        .content {
+            display: flex;
+            // margin-top: 80px;
+            flex-direction: column;
+            align-items: left;
+            justify-content: space-evenly;
+
+            span:hover {
+                color: blueviolet;
+            }
+        }
+
+        img {
+            width:30%
+        }
+    }
 }
