@@ -1,0 +1,52 @@
+$primary-color: grey;
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+
+    a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: 1em;
+        padding: 0.5em;
+    }
+}
+
+.landing-area {
+    img {
+        display: flex;
+        border-radius: 50%;
+        width: 60%;
+        margin: auto;
+        margin-top: 2.2em;
+        padding: 10px;
+    }
+
+    h2 {
+        margin: auto;
+    }
+}
+
+.chatbot-container {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 20%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    background-color: black;
+}

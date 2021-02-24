@@ -1,0 +1,59 @@
+body {
+  background-color: white;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: black;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0.5em;
+}
+
+.landing-area img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  width: 60%;
+  margin: auto;
+  margin-top: 2.2em;
+  padding: 10px;
+}
+
+.landing-area h2 {
+  margin: auto;
+}
+
+.chatbot-container {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 20%;
+  border-radius: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: red;
+  background-color: black;
+}
+/*# sourceMappingURL=style.css.map */
