@@ -3,11 +3,20 @@ $primary-color: grey;
 body {
     background-color: rgb(255, 255, 255);
     box-sizing: border-box;
+    display: grid;
+    margin-top: 50px;
+    grid-template:
+    'profiles profiles profiles profiles profiles profiles social'
+    'content content content content content content content'
+    'about about about about about about about';
+    grid-gap: 10px;
+    padding: 10px;
 }
 
 .navbar {
     display: flex;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
@@ -22,48 +31,45 @@ body {
         list-style-type: none;
         padding-left: 5px;
         padding-right: 5px;
-        align-content: stretch;
-
     }
 
     a {
         text-decoration: none;
         color: rgb(255, 255, 255);
         font-weight: bold;
-        font-size: 15px;
+        font-size: 12px;
         padding: 5px;
     }
 }
 
-.landing-area {
-    img {
-        display: flex;
+.profile-picture {
+    grid-area: profiles;
+    // grid-column: 1 / 6;
+    // grid-row: 1 / 2;
+
+    // margin-top: 10px;
+
+    #profile-image {
+        width: 90%;
         border-radius: 50%;
-        width: 40%;
-        margin: auto;
-        margin-top: 3.5em;
-        padding: 10px;
     }
+}
 
-    .content {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        align-items: center;
-        justify-content: space-evenly;
+.social-connect {
+    grid-area: social;
 
-        .name {
-            font-weight: 800;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: space-around;
+    width: 90%;
+    // justify-items: center;
+}
 
-            span {
-                font-size: 20px;
-            }
-        }
+.content {
+    grid-area: content;
+}
 
-    }
+.about-me {
+    grid-area: about;
+    height: 500px;
 }
 
 .chatbot-container {
@@ -71,99 +77,11 @@ body {
     display: flex;
     right: 10px;
     bottom: 10px;
-    width: 18%;
-    height: 25px;
+    width: 80px;
+    height: 30px;
+    color: chartreuse;
+    background-color: darkblue;
     border-radius: 20px;
-    align-items: center;
     justify-content: center;
-    color: rgb(255, 230, 0);
-    font-weight: bold;
-    background-color: rgb(154, 3, 214);
-}
-
-.about-me {
-    height: 100vh;
-}
-
-.my-work {
-    height: 100vh;
-}
-
-.my-articles {
-    height: 100vh;
-}
-
-.contact-me {
-    height: 100vh;
-}
-
-
-
-
-
-@media (min-width: 500px) {
-
-    .navbar {    
-        background-color: black;
-        text-align: center;
-
-        ul {
-            display: flex;
-            
-            li {
-                a:hover{
-                    color: chartreuse;
-                }
-            }
-        }
-
-        a {
-            font-weight: bold;
-            font-size: 20px;
-            padding: 20px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-
-            
-        }
-    }
-
-    .landing-area {
-        display: flex;
-        padding: 10px;
-        height: 100vh;
-        
-        img {
-            margin-top: auto;
-            margin-bottom: auto;
-            width: 30%
-        }
-
-        .content {
-            flex-direction: column;
-            align-items: stretch;
-
-            .name {
-                font-size: 30px;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                justify-content: center;
-
-                span {
-                    font-size: 40px;
-                }
-
-                span:hover {
-                    // color: chartreuse;
-                    color: saddlebrown;
-                }
-            }
-        }
-
-    }
-
-    .chatbot-container {
-        width: 10%;
-    }
-
+    align-items: center;
 }
