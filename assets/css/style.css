@@ -336,6 +336,11 @@ main {
   border-radius: 20px;
 }
 
+.avatar-box img { 
+  width: 150px; 
+  border-radius: 20%;
+}
+
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
@@ -720,6 +725,8 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
+
+.testimonials-avatar-box img { width: 80px; border-radius:30%}
 
 
 /**
@@ -1803,7 +1810,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   main {
-    max-width: 1200px;
+    max-width: 1300px;
     margin-inline: auto;
     display: flex;
     justify-content: center;
@@ -1825,6 +1832,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar {
     position: sticky;
+    padding: 20px;
     top: 60px;
     max-height: max-content;
     height: 100%;
@@ -1855,8 +1863,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .contact-info :is(.contact-link) {
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: scroll;
+    text-overflow: scroll;
   }
 
   .contact-info :is(.contact-link, time, address) {
