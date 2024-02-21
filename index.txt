@@ -2,23 +2,23 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Nikhil Kumar Sharma
+Nikhil Kumar Sharma
+Data Scientist
 
 Show Contacts
 
 Email
-richard@example.com
+nikhil.sharma1294@gmail.com
 
 Phone
-+1 (213) 352-2795
++91 9968-944-825
 
 Birthday
-June 23, 1982
+Feb 1st, 1994
 
 Location
-Sacramento, California, USA
+Bengaluru, Karnataka, India
 
 # navbar
 
