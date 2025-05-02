@@ -16,3 +16,5 @@ DSA:
 1. https://www.youtube.com/@NeetCode/playlists
 
 https://excalidraw.com/
+https://capacities.io/
+https://vercel.com/
